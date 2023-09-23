@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-weight: 300px;
+    font-family:Arial, Helvetica, sans-serif
+}body{
+    background-color: rgba(0, 255, 255, 0.096);
+}
+.section1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    height: 100vh;
+
+}
+.heading
+{
+    font-size: 80px;
+}
+.desc{
+    display: flex;
+    width: 50%;
+    margin-bottom: 40px;
+    min-width: 108rem;
+}
+
+.desc input, #button
+{
+    font-size: 80px;
+    padding: 5px;
+}
+.desc input{
+
+    width: 100%;
+    
+}
+#button
+{
+    background-color: rgb(99, 39, 177);
+    color: aliceblue;
+}
+#button:hover
+{
+    background-color: rgb(109, 9, 240);
+    color: aliceblue;
+}
+@media (max-width: 780px)  {
+    .desc{
+        display: flex;
+        width: 60%;
+    }
+}
+
+.profile{
+    padding :4rem 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    width: 30%;
+    min-width: 108rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+}
+.profile:hover{
+    transform: rotate(-3deg);
+    transition: 0.7s ease-in-out;
+}
+.avatar
+{
+    width: 15rem ;
+    height: 15rem;
+    border-radius: 50%;
+}
+.avatar img
+{
+    width: 15rem ;
+    height: 15rem;
+    border-radius: 50%;
+}
+#button1
+{
+    font-size: 55px;
+    padding: 8px;
+    background-color: rgb(99, 39, 177);
+    color: aliceblue;
+    align-self: start;
+}
+#button1:hover
+{
+    background-color: rgb(110, 14, 236);
+    
+}
+.top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.desc1
+{
+    font-size: 35px;
+}
+.about
+{
+    margin: 1.5rem;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.status
+{
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin: 1.5rem;
+}
+.status-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.about p, .status-item p{
+    font-size: 65px;
+    margin: 0.5rem;
+    word-spacing: 0.3rem;
+}
